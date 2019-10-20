@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.myapplication.Fragment.Start2Fragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodeo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputte velit esse o\molestie consequaat, vel illum dolore eu  feugiat nulla facillsis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptaum zzril delenit augeue duis "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_download"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:textColor="#ffffff"
+            android:text="PDF Downloads"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/ic_info"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:text="Alle Leistungen"/>
+    </LinearLayout>
+
+</LinearLayout>

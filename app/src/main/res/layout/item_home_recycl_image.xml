@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="170.5dp"
+    android:layout_height="160.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imv_img_hom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/swimmer"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txv_name_hom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:text="ab 1,09\u20ac"
+            android:background="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txv_bundle"
+            android:text="PRODUCTNSME"
+            android:paddingLeft="5dp"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:layout_above="@+id/txv_name_hom"
+            android:background="#4D000000"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

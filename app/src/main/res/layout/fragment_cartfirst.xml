@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    tools:context="com.myapplication.Fragment.CartfirstFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Meine Daten"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorwhite"
+                android:layout_marginTop="10dp"/>
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/togle_radius_outside_btn">
+
+                <RadioButton
+                    android:id="@+id/radio_invitation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius_togle_btn"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Neu"
+                    android:layout_margin="1dp"
+                    android:textSize="12sp"
+                    android:textColor="@drawable/textcolor_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio_new_connection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/radius_togle_btn"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="12sp"
+                    android:layout_margin="1dp"
+                    android:text="Anmelden"
+                    android:textColor="@drawable/textcolor_selector" />
+            </RadioGroup>
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/viewper12"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/colorbackground"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/leftsidebutton">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Zuruck"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/leftsidicone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rightsidebutton">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="WEITER"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:drawableRight="@drawable/rightside"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

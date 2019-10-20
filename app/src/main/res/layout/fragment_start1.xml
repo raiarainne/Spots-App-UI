@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.myapplication.Fragment.Start1Fragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="401dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            >
+            <cn.refactor.library.SmoothCheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/scb1"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                app:color_checked="#59565c"
+                app:color_unchecked="#3d3f42"
+                app:color_unchecked_stroke="#59565c"
+                app:color_tick="#000000"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Highlight 1"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            >
+            <cn.refactor.library.SmoothCheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/scb2"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                app:color_checked="#59565c"
+                app:color_unchecked="#3d3f42"
+                app:color_unchecked_stroke="#59565c"
+                app:color_tick="#000000"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Highlight 2"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            >
+            <cn.refactor.library.SmoothCheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/scb3"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                app:color_checked="#59565c"
+                app:color_unchecked="#3d3f42"
+                app:color_unchecked_stroke="#59565c"
+                app:color_tick="#000000"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Highlight 3"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            >
+            <cn.refactor.library.SmoothCheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/scb4"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                app:color_checked="#59565c"
+                app:color_unchecked="#3d3f42"
+                app:color_unchecked_stroke="#59565c"
+                app:color_tick="#000000"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Highlight 4"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            >
+            <cn.refactor.library.SmoothCheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/scb5"
+                android:layout_margin="5dp"
+                android:paddingBottom="10dp"
+                app:color_checked="#59565c"
+                app:color_unchecked="#3d3f42"
+                app:color_unchecked_stroke="#59565c"
+                app:color_tick="#000000"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="Highlight 4"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

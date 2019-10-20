@@ -1,0 +1,1036 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorbackground"
+    >
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:id="@+id/imv_back"
+                android:src="@mipmap/ic_profile"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Vertrage"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:gravity="center"
+                android:textSize="18sp"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:id="@+id/imv_baket"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_road"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/src_view"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rtv_scroll"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txv_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="14dp"
+                android:text="@string/current"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/lyt_pan_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txv_current"
+                android:layout_marginTop="30dp">
+
+                <!--Panellllllllllllllllllllllllllllllll-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--product-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_product"
+
+                        android:orientation="horizontal">
+
+                        <com.myapplication.Utils.LVRingProgress
+                            android:id="@+id/lv_ringp1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.myapplication.Utils.LVRingProgress>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/category"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/product_name"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="4dp"
+                                android:text="@string/timing"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--action-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_action"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="36dp"
+                            android:drawableLeft="@mipmap/ic_plus"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/action"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:id="@+id/txv_info_1"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="36dp"
+                            android:drawableRight="@mipmap/ic_dots"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Panellllllllllllllllllllllllllllllll-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert_1"
+                android:orientation="vertical"
+                android:layout_alignBottom="@+id/lyt_pan_1"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/aler_stroke_rect">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvalleinfos_1"
+                    android:text="Alle infos"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@mipmap/ic_info_1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_downloads_1"
+                    android:text="Downloads"
+                    android:drawableLeft="@mipmap/ic_download_1"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_teilen_1"
+                    android:text="Teilen"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:drawableLeft="@mipmap/ic_divide_1"
+                    android:drawablePadding="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_pan_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lyt_pan_1"
+                android:layout_marginTop="164dp">
+
+                <!--Panellllllllllllllllllllllllllllllll-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--product-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_product"
+                        android:orientation="horizontal">
+
+                        <com.myapplication.Utils.LVRingProgress
+                            android:id="@+id/lv_ringp2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.myapplication.Utils.LVRingProgress>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/category"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/product_name"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="4dp"
+                                android:text="@string/timing"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--action-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_action"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="36dp"
+                            android:drawableLeft="@mipmap/ic_plus"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/action"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txv_info_2"
+                            android:layout_weight="1"
+                            android:layout_marginRight="36dp"
+                            android:drawableRight="@mipmap/ic_dots"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Panellllllllllllllllllllllllllllllll-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert_2"
+                android:orientation="vertical"
+                android:layout_alignBottom="@+id/lyt_pan_2"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/aler_stroke_rect">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvalleinfos_2"
+                    android:text="Alle infos"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@mipmap/ic_info_1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_downloads_2"
+                    android:text="Downloads"
+                    android:drawableLeft="@mipmap/ic_download_1"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_teilen_2"
+                    android:text="Teilen"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:drawableLeft="@mipmap/ic_divide_1"
+                    android:drawablePadding="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txv_future"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:layout_marginLeft="14dp"
+                android:text="@string/future"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/lyt_pan_2" />
+
+            <LinearLayout
+                android:id="@+id/lyt_pan_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txv_future"
+                android:layout_marginTop="30dp">
+
+                <!--Panellllllllllllllllllllllllllllllll-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--product-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_product"
+                        android:orientation="horizontal">
+
+                        <com.myapplication.Utils.LVRingProgress
+                            android:id="@+id/lv_ringp3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.myapplication.Utils.LVRingProgress>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/category"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/product_name"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="4dp"
+                                android:text="@string/timing"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--action-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_action"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="36dp"
+                            android:drawableLeft="@mipmap/ic_plus"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/action"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txv_info_3"
+                            android:layout_weight="1"
+                            android:layout_marginRight="36dp"
+                            android:drawableRight="@mipmap/ic_dots"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Panellllllllllllllllllllllllllllllll-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert_3"
+                android:orientation="vertical"
+                android:layout_alignBottom="@+id/lyt_pan_3"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/aler_stroke_rect">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvalleinfos_3"
+                    android:text="Alle infos"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@mipmap/ic_info_1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_downloads_3"
+                    android:text="Downloads"
+                    android:drawableLeft="@mipmap/ic_download_1"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_teilen_3"
+                    android:text="Teilen"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:drawableLeft="@mipmap/ic_divide_1"
+                    android:drawablePadding="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_pan_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/lyt_pan_3"
+                android:layout_marginTop="164dp">
+
+                <!--Panellllllllllllllllllllllllllllllll-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--product-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_product"
+                        android:orientation="horizontal">
+
+                        <com.myapplication.Utils.LVRingProgress
+                            android:id="@+id/lv_ringp4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.myapplication.Utils.LVRingProgress>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/category"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/product_name"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="4dp"
+                                android:text="@string/timing"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--action-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_action"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="36dp"
+                            android:drawableLeft="@mipmap/ic_plus"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/action"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txv_info_4"
+                            android:layout_weight="1"
+                            android:layout_marginRight="36dp"
+                            android:drawableRight="@mipmap/ic_dots"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Panellllllllllllllllllllllllllllllll-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert_4"
+                android:orientation="vertical"
+                android:layout_alignBottom="@+id/lyt_pan_4"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/aler_stroke_rect">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvalleinfos_4"
+                    android:text="Alle infos"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@mipmap/ic_info_1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_downloads_4"
+                    android:text="Downloads"
+                    android:drawableLeft="@mipmap/ic_download_1"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_teilen_4"
+                    android:text="Teilen"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:drawableLeft="@mipmap/ic_divide_1"
+                    android:drawablePadding="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+           <!-- <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert_4"
+                android:orientation="vertical"
+                android:layout_alignBottom="@+id/lyt_pan_1"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/aler_stroke_rect">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvalleinfos_4"
+                    android:text="Alle infos"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@mipmap/ic_info_1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_downloads_4"
+                    android:text="Downloads"
+                    android:drawableLeft="@mipmap/ic_download_1"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_teilen_4"
+                    android:text="Teilen"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:drawableLeft="@mipmap/ic_divide_1"
+                    android:drawablePadding="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>-->
+
+            <TextView
+                android:id="@+id/txv_expired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="190dp"
+                android:layout_marginLeft="14dp"
+                android:text="@string/expired"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/lyt_pan_4" />
+
+            <LinearLayout
+                android:id="@+id/lyt_pan_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txv_expired"
+                android:layout_marginTop="30dp">
+
+                <!--Panellllllllllllllllllllllllllllllll-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!--product-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_product"
+                        android:orientation="horizontal">
+
+                        <com.myapplication.Utils.LVRingProgress
+                            android:id="@+id/lv_ringp6"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            >
+                        </com.myapplication.Utils.LVRingProgress>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/category"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="2dp"
+                                android:text="@string/product_name"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="6dp"
+                                android:paddingTop="4dp"
+                                android:text="@string/timing"
+                                android:textColor="@color/colorGrayWhite"
+                                android:textSize="10sp"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!--action-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/panel_action"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="70dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="36dp"
+                            android:drawableLeft="@mipmap/ic_return"
+                            android:drawablePadding="6dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/action"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="36dp"
+                            android:drawableRight="@mipmap/ic_dots"
+                            android:drawablePadding="6dp"
+                            android:id="@+id/txv_info_5"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Panellllllllllllllllllllllllllllllll-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alert_5"
+                android:orientation="vertical"
+                android:layout_alignBottom="@+id/lyt_pan_5"
+                android:layout_marginBottom="120dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/aler_stroke_rect">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txvalleinfos_5"
+                    android:text="Alle infos"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@mipmap/ic_info_1"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_downloads_5"
+                    android:text="Downloads"
+                    android:drawableLeft="@mipmap/ic_download_1"
+                    android:paddingBottom="5dp"
+                    android:drawablePadding="15dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#373739"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txv_teilen_5"
+                    android:text="Teilen"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:drawableLeft="@mipmap/ic_divide_1"
+                    android:drawablePadding="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

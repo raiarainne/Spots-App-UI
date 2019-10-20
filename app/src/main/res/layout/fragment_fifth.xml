@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="7dp"
+    android:background="@drawable/main_header_selector"
+    tools:context="com.myapplication.Fragment.FifthFragment">
+
+
+
+    <com.myapplication.Utils.ScrollListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="45dp"
+        android:paddingBottom="50dp"
+        android:scrollbars="none"
+        android:paddingLeft="15dp"
+        android:id="@+id/lst_card"
+        android:divider="@null"
+        android:paddingRight="15dp"
+        >
+
+    </com.myapplication.Utils.ScrollListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/colorbackground"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_back"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:text="Warenkorb"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/lyt_bottom"
+            android:background="#da3d66">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="ZUR KASSEW GEHEN"
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:id="@+id/lyt_bottomnot"
+            android:background="@color/black"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Artikel"
+                    android:textColor="@color/white_86"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_80"/>
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="71,60 \u20ac"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cesamtsumme"
+                    android:textColor="@color/white_86"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#da3d66"
+                android:text="ZUR KASSEW GEHEN"
+                android:gravity="center"
+                android:textColor="@color/colorwhite"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.myapplication.Fragment.Cartfirstsub1Fragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp">
+        <EditText android:id="@+id/add_childname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="@color/white_86"
+            android:textColor="@color/white_86"
+            android:textSize="21sp"
+            android:hint="Vorname"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffffff"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <EditText android:id="@+id/add_childname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="@color/white_86"
+            android:textColor="@color/white_86"
+            android:textSize="21sp"
+            android:hint="Nachname"/>
+
+    </android.support.design.widget.TextInputLayout>
+   <!-- <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffffff"
+        android:id="@+id/txv_birthdate"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:id="@+id/etx_date"
+            android:textColorHint="@color/white_86"
+            android:textColor="@color/white_86"
+            android:textSize="21sp"
+            android:drawableRight="@drawable/cho"
+            android:hint="Geburtsdatum"/>
+
+    </android.support.design.widget.TextInputLayout>-->
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/white_86"
+               android:text="Geburtsdatum"
+               android:id="@+id/txv_datetitle"
+               android:visibility="invisible"
+               android:layout_marginLeft="13dp"
+               android:layout_marginTop="15dp"/>
+
+           <TextView
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="13dp"
+               android:background="@null"
+               android:textColor="@color/colorwhite"
+               android:layout_marginRight="15dp"
+               android:id="@+id/txv_date"
+               android:textSize="20sp"
+               android:hint="Gebburtsdatum"
+               android:textColorHint="@color/white_86"
+               android:drawableRight="@drawable/cho"
+               android:layout_marginTop="10dp"/>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="@color/white_86"
+               android:layout_marginTop="15dp"
+               android:layout_marginLeft="13dp"
+               android:layout_marginRight="13dp"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColorHint="@color/white_20"
+            android:textColor="@color/white_86"
+            android:textSize="21sp"
+            android:hint="E-mail"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

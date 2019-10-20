@@ -1,0 +1,308 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorbackground"
+    tools:context="com.myapplication.Fragment.MainsubFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scr_subscroll"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/btn_gray"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="11 2357 45666 342323323"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vertragsnummer"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4Dffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="50dp"
+                    android:background="@mipmap/btn_gray"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:text="PREMIUM-PARTNER PLUS"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leistungen"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                >
+                <cn.refactor.library.SmoothCheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/scb1"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="10dp"
+                    app:color_checked="#59565c"
+                    app:color_unchecked="#16181f"
+                    app:color_unchecked_stroke="#59565c"
+                    app:color_tick="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Highlight 1"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                >
+                <cn.refactor.library.SmoothCheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/scb2"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="10dp"
+                    app:color_checked="#59565c"
+                    app:color_unchecked="#16181f"
+                    app:color_unchecked_stroke="#59565c"
+                    app:color_tick="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Highlight 2"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                >
+                <cn.refactor.library.SmoothCheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/scb3"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="10dp"
+                    app:color_checked="#59565c"
+                    app:color_unchecked="#16181f"
+                    app:color_unchecked_stroke="#59565c"
+                    app:color_tick="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Highlight 3"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                >
+                <cn.refactor.library.SmoothCheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/scb4"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="10dp"
+                    app:color_checked="#59565c"
+                    app:color_unchecked="#16181f"
+                    app:color_unchecked_stroke="#59565c"
+                    app:color_tick="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Highlight 4"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="50dp"
+                >
+                <cn.refactor.library.SmoothCheckBox
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/scb5"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="10dp"
+                    app:color_checked="#59565c"
+                    app:color_unchecked="#16181f"
+                    app:color_unchecked_stroke="#59565c"
+                    app:color_tick="#000000"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="Highlight 5"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4Dffffff"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_download"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="Downloads"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="8dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_info"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alle Infos"
+                        android:textSize="17sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="8dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:text="BELIEBTE PRODUKTE"
+                android:layout_marginBottom="10dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rev_image"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:text="BUNDLES-UNSER ALL-IN-ONE PAKET"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="30dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rev_image1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
