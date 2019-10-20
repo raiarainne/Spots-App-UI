@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandablePager">
+        <attr name="animation_duration" format="integer" />
+        <attr name="collapsed_height" format="dimension" />
+    </declare-styleable>
+
+    <item name="internal_page_id" type="id" />
+    <item name="internal_pager_id" type="id" />
+</resources>
